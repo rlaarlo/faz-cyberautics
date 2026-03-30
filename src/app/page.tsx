@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div className={`min-h-screen font-sans relative overflow-x-hidden selection:bg-primary/30 ${isDark ? 'bg-slate-950 text-white' : 'bg-white text-slate-900'}`}>
       {/* Full-screen Wave Animation */}
-      {isDark && <WaveBackground />}
+      <WaveBackground />
 
       {/* Navbar */}
       <nav className={`fixed top-0 w-full z-50 border-b ${isDark ? 'bg-slate-950/50 backdrop-blur-xl border-white/10' : 'bg-white/80 backdrop-blur-xl border-slate-200'}`}>

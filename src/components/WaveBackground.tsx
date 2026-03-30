@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useTheme } from "./ThemeProvider";
 
 export default function WaveBackground() {
     const canvasRef = useRef<HTMLCanvasElement>(null);
+    const { theme } = useTheme();
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -143,7 +145,7 @@ export default function WaveBackground() {
         <canvas
             ref={canvasRef}
             className="fixed inset-0 w-full h-full pointer-events-none z-0"
-            style={{ opacity: 0.7 }}
+            style={{ opacity: theme === 'dark' ? 0.7 : 0.4 }}
         />
     );
 }
