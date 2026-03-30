@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { useTheme } from "./ThemeProvider";
 
 const faqData = [
     {
@@ -56,6 +57,8 @@ const faqData = [
 
 export default function FaqSection() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const { theme } = useTheme();
+    const isDark = theme === 'dark';
 
     const toggle = (i: number) => {
         setOpenIndex(openIndex === i ? null : i);
@@ -69,13 +72,13 @@ export default function FaqSection() {
     const renderItem = (item: (typeof faqData)[0], index: number) => (
         <div
             key={index}
-            className="border border-white/10 rounded-xl overflow-hidden transition-all hover:border-white/20"
+            className={`border rounded-xl overflow-hidden transition-all ${isDark ? 'border-white/10 hover:border-white/20' : 'border-slate-200 hover:border-slate-300'}`}
         >
             <button
                 onClick={() => toggle(index)}
-                className="w-full flex items-center justify-between gap-3 px-5 py-4 text-left cursor-pointer bg-white/5 hover:bg-white/10 transition-colors"
+                className={`w-full flex items-center justify-between gap-3 px-5 py-4 text-left cursor-pointer transition-colors ${isDark ? 'bg-white/5 hover:bg-white/10' : 'bg-slate-50 hover:bg-slate-100'}`}
             >
-                <span className="text-sm font-semibold text-white leading-snug">
+                <span className={`text-sm font-semibold leading-snug ${isDark ? 'text-white' : 'text-slate-900'}`}>
                     {item.q}
                 </span>
                 <ChevronDown
@@ -90,7 +93,7 @@ export default function FaqSection() {
                     }`}
             >
                 <div className="overflow-hidden">
-                    <p className="px-5 py-4 text-xs text-white/60 leading-relaxed border-t border-white/5">
+                    <p className={`px-5 py-4 text-xs leading-relaxed border-t ${isDark ? 'text-white/60 border-white/5' : 'text-slate-500 border-slate-100'}`}>
                         {item.a}
                     </p>
                 </div>
@@ -101,17 +104,17 @@ export default function FaqSection() {
     return (
         <section
             id="faq"
-            className="min-h-screen flex items-center py-16 bg-slate-950/90 relative"
+            className={`min-h-screen flex items-center py-16 relative ${isDark ? 'bg-slate-950/90' : 'bg-slate-50'}`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div className="text-center mb-12">
                     <span className="text-primary font-bold tracking-wider uppercase text-xs">
                         FAQ
                     </span>
-                    <h2 className="text-2xl md:text-3xl font-bold text-white mt-2 mb-3">
+                    <h2 className={`text-2xl md:text-3xl font-bold mt-2 mb-3 ${isDark ? 'text-white' : 'text-slate-900'}`}>
                         Pertanyaan yang Sering Diajukan
                     </h2>
-                    <p className="text-white/70 text-sm max-w-xl mx-auto">
+                    <p className={`text-sm max-w-xl mx-auto ${isDark ? 'text-white/70' : 'text-slate-600'}`}>
                         Temukan jawaban atas pertanyaan umum tentang platform FAZCBT dan
                         layanan yang kami sediakan.
                     </p>
