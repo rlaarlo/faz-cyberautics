@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020617;
+  /* slate-950 */
+  --foreground: #f8fafc;
+  /* slate-50 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-outfit);
+  --font-mono: var(--font-geist-mono);
+  --color-primary: #E11D8D;
+  --color-secondary: #F97316;
+  --color-accent: #FB7185;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  33% {
+    transform: translateY(-30px) rotate(10deg);
+  }
+
+  66% {
+    transform: translateY(15px) rotate(-10deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.animate-float-1 {
+  animation: float 12s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float 15s ease-in-out infinite reverse;
+}
+
+.animate-float-3 {
+  animation: float 18s ease-in-out infinite;
+  animation-delay: -5s;
+}
+
+.animate-float-4 {
+  animation: float 20s ease-in-out infinite reverse;
+  animation-delay: -8s;
+}
