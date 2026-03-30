@@ -51,7 +51,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-14">
             <div className="flex items-center gap-2">
-              <img src="/assets/logo-header.png" alt="FAZCBT Logo" className="h-8 w-auto" />
+              <img src={isDark ? '/assets/logo-header.png' : '/assets/logo-header-light.png'} alt="FAZCBT Logo" className="h-8 w-auto" />
             </div>
             <div className="hidden md:flex items-center gap-6">
               <Link href="#tentang" className={`text-sm font-medium transition-colors ${isDark ? 'text-white/70 hover:text-primary' : 'text-slate-600 hover:text-primary'}`}>Tentang Kami</Link>
@@ -370,7 +370,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <img src="/assets/logo-header.png" alt="FAZCBT Logo" className="h-8 w-auto" />
+                <img src={isDark ? '/assets/logo-header.png' : '/assets/logo-header-light.png'} alt="FAZCBT Logo" className="h-8 w-auto" />
               </div>
               <p className={`text-sm leading-relaxed ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
                 FAZCBT adalah platform simulasi ujian & assessment digital yang dikembangkan oleh <span className={`font-medium ${isDark ? 'text-white' : 'text-slate-900'}`}>FAZ Cyberautics Solutions</span>, tepercaya dan berdedikasi tinggi demi memajukan kualitas pendidikan di Indonesia.
