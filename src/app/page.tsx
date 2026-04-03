@@ -90,10 +90,10 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a href="https://app.fazcbt.id/id/login" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-6 py-3 text-sm bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full hover:shadow-primary/40 hover:-translate-y-0.5 hover:opacity-90 transition-all shadow-xl shadow-primary/40">
-                Sudah Punya Akun? silahkan Login. <ArrowRight className="w-4 h-4" />
+                Admin Login. <ArrowRight className="w-4 h-4" />
               </a>
               <a href="https://app.fazcbt.id/id/exams" target="_blank" rel="noopener noreferrer" className={`flex items-center justify-center gap-2 px-6 py-3 text-sm font-semibold rounded-full border transition-all ${isDark ? 'bg-white/5 backdrop-blur-md text-white border-white/10 hover:border-white/30 hover:bg-white/10' : 'bg-slate-100 text-slate-800 border-slate-200 hover:border-slate-300 hover:bg-slate-200'}`}>
-                <PlayCircle className="w-4 h-4 text-primary" /> Login Exam
+                <PlayCircle className="w-4 h-4 text-primary" /> Masuk Ujian.
               </a>
             </div>
           </div>
