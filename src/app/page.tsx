@@ -56,7 +56,7 @@ export default function Home() {
             <div className="hidden md:flex items-center gap-6">
               <Link href="#tentang" className={`text-sm font-medium transition-colors ${isDark ? 'text-white/70 hover:text-primary' : 'text-slate-600 hover:text-primary'}`}>Tentang Kami</Link>
               <Link href="#layanan" className={`text-sm font-medium transition-colors ${isDark ? 'text-white/70 hover:text-primary' : 'text-slate-600 hover:text-primary'}`}>Layanan</Link>
-              <Link href="#keunggulan" className={`text-sm font-medium transition-colors ${isDark ? 'text-white/70 hover:text-primary' : 'text-slate-600 hover:text-primary'}`}>Keunggulan</Link>
+              <Link href="#roadmap-ai" className={`text-sm font-medium transition-colors ${isDark ? 'text-white/70 hover:text-primary' : 'text-slate-600 hover:text-primary'}`}>Roadmap</Link>
               <Link href="#faq" className={`text-sm font-medium transition-colors ${isDark ? 'text-white/70 hover:text-primary' : 'text-slate-600 hover:text-primary'}`}>FAQ</Link>
               <ThemeToggle />
               <a href="https://wa.me/62881080574850?text=Halo%20FAZCBT%2C%20saya%20ingin%20info%20lebih%20lanjut" target="_blank" rel="noopener noreferrer" className="px-4 py-2 text-sm bg-gradient-to-r from-primary to-secondary text-white font-medium rounded-full hover:opacity-90 transition-opacity shadow-lg shadow-primary/50">
@@ -80,20 +80,20 @@ export default function Home() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
               </span>
-              EduTech Masa Depan
+              EdTech Indonesia · Asesmen untuk Sekolah
             </div>
             <h1 className={`text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight ${isDark ? 'text-white' : 'text-slate-900'}`}>
-              Platform Simulasi <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Ujian & Assessment</span> Digital untuk Sekolah
+              FAZCBT <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Asesmen Digital</span> untuk Sekolah
             </h1>
             <p className={`text-base md:text-lg leading-relaxed max-w-xl ${isDark ? 'text-white/70' : 'text-slate-600'}`}>
-              Menyediakan sistem simulasi ujian berbasis komputer (CBT) tercanggih untuk membantu sekolah mempersiapkan siswa menghadapi berbagai asesmen nasional dan internasional.
+              Bantu guru melihat kebutuhan belajar di balik nilai ujian. FAZCBT menyediakan simulasi CBT untuk sekolah dan madrasah, dengan arah pengembangan asisten AI untuk menyusun asesmen dan menyiapkan tindak lanjut belajar.
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <a href="https://app.fazcbt.id/id/login" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-6 py-3 text-sm bg-primary text-white font-semibold rounded-full hover:shadow-primary/40 hover:-translate-y-0.5 hover:opacity-90 transition-all shadow-xl shadow-primary/40">
-                Admin Login. <ArrowRight className="w-4 h-4" />
+                Masuk Dashboard <ArrowRight className="w-4 h-4" />
               </a>
               <a href="https://app.fazcbt.id/id/exams" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 px-6 py-3 text-sm bg-secondary text-white font-semibold rounded-full hover:shadow-secondary/40 hover:-translate-y-0.5 hover:opacity-90 transition-all shadow-xl shadow-secondary/40">
-                <PlayCircle className="w-4 h-4 text-white" /> Mulai Ujian.
+                <PlayCircle className="w-4 h-4 text-white" /> Mulai Ujian
               </a>
             </div>
           </div>
@@ -105,13 +105,13 @@ export default function Home() {
                 alt="Siswa mengerjakan ujian berbasis komputer"
                 className="w-full h-full object-cover aspect-[4/3] transform hover:scale-105 transition-transform duration-700"
               />
-              <div className={`absolute bottom-3 left-3 right-3 backdrop-blur-xl p-3 rounded-lg shadow-2xl border flex items-center justify-between ${isDark ? 'bg-slate-950/80 border-white/10' : 'bg-white/90 border-slate-200'}`}>
+              <div className={`absolute bottom-3 left-3 right-3 backdrop-blur-xl p-3 rounded-lg shadow-2xl border flex flex-wrap gap-3 items-center justify-between ${isDark ? 'bg-slate-950/80 border-white/10' : 'bg-white/90 border-slate-200'}`}>
                 <div>
-                  <p className={`text-xs font-semibold ${isDark ? 'text-white' : 'text-slate-900'}`}>Butuh bantuan?</p>
-                  <p className={`text-[10px] ${isDark ? 'text-white/70' : 'text-slate-500'}`}>Hubungi kami untuk demo</p>
+                  <p className={`text-xs font-semibold ${isDark ? 'text-white' : 'text-slate-900'}`}>Diskusikan kebutuhan sekolah</p>
+                  <p className={`text-[10px] ${isDark ? 'text-white/70' : 'text-slate-500'}`}>Jadwalkan demo bersama tim</p>
                 </div>
-                <a href="#kontak" className="w-9 h-9 bg-primary/20 hover:bg-primary/40 transition-colors rounded-full flex items-center justify-center text-primary font-bold">
-                  <ArrowRight className="w-4 h-4" />
+                <a href="https://wa.me/62881080574850?text=Halo%2520FAZCBT%252C%2520saya%2520ingin%2520info%2520lebih%2520lanjut" target="_blank" rel="noopener noreferrer" className="h-9 px-3 shrink-0 bg-primary/20 hover:bg-primary/40 transition-colors rounded-full flex items-center justify-center gap-2 text-xs text-primary font-bold">
+                  Hubungi Kami <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
             </div>
@@ -126,10 +126,10 @@ export default function Home() {
             <h2 className={`text-2xl md:text-3xl font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>Tentang <span className="text-primary">FAZCBT</span></h2>
             <div className="h-1 w-16 bg-primary rounded-full mx-auto"></div>
             <p className={`text-sm md:text-base leading-relaxed ${isDark ? 'text-white/70' : 'text-slate-600'}`}>
-              <span className={`font-semibold ${isDark ? 'text-white' : 'text-slate-900'}`}>FAZCBT</span> adalah platform simulasi ujian berbasis komputer (CBT) yang dikembangkan di bawah naungan <span className="text-primary font-semibold">FAZ Cyberautics Solutions</span> — perusahaan teknologi pendidikan yang berfokus pada solusi digital untuk dunia pendidikan di Indonesia.
+              <span className={`font-semibold ${isDark ? 'text-white' : 'text-slate-900'}`}>FAZCBT</span> adalah produk teknologi pendidikan dari <span className="text-primary font-semibold">FAZ Cyberautics Solutions</span>. Fokus kami adalah membantu sekolah dan madrasah di Indonesia menghubungkan pelaksanaan ujian dengan keputusan pembelajaran yang lebih terarah.
             </p>
             <p className={`text-sm md:text-base leading-relaxed ${isDark ? 'text-white/70' : 'text-slate-600'}`}>
-              Platform ini dirancang untuk membantu sekolah dan lembaga pendidikan mempersiapkan siswa menghadapi berbagai asesmen nasional dan internasional melalui simulasi yang realistis, didukung oleh analisis hasil yang komprehensif dan akurat untuk membantu memetakan potensi belajar secara optimal.
+              Menyusun soal, membaca hasil per siswa, dan menyiapkan remedial membutuhkan waktu guru. Kami ingin menyatukan alur tersebut: mulai dari simulasi CBT, evaluasi hasil, hingga rencana bantuan AI yang dapat ditinjau guru sebelum digunakan di kelas.
             </p>
           </div>
         </div>
@@ -152,7 +152,7 @@ export default function Home() {
               </div>
               <h3 className={`text-base font-bold mb-2 ${isDark ? 'text-white' : 'text-slate-900'}`}>Simulasi ANBK</h3>
               <p className={`text-xs leading-relaxed ${isDark ? 'text-white/70' : 'text-slate-600'}`}>
-                Simulasi Asesmen Nasional Berbasis Komputer untuk mempersiapkan siswa menghadapi ANBK secara optimal dengan antarmuka yang persis aslinya.
+                Latihan literasi dan numerasi berbasis komputer untuk membiasakan siswa dengan alur pengerjaan ANBK. Layanan latihan independen, bukan ujian resmi.
               </p>
             </div>
 
@@ -218,7 +218,7 @@ export default function Home() {
               </div>
               <h3 className={`text-base font-bold mb-2 ${isDark ? 'text-white' : 'text-slate-900'}`}>Test Gaya Belajar</h3>
               <p className={`text-xs leading-relaxed ${isDark ? 'text-white/70' : 'text-slate-600'}`}>
-                Identifikasi gaya belajar personal siswa (visual, auditori, atau kinestetik) agar guru dapat menyesuaikan metode pembelajaran secara tepat.
+                Eksplorasi preferensi belajar sebagai bahan percakapan guru dan siswa, bukan diagnosis atau penetapan kemampuan belajar yang bersifat tetap.
               </p>
             </div>
 
@@ -229,7 +229,7 @@ export default function Home() {
               </div>
               <h3 className={`text-base font-bold mb-2 ${isDark ? 'text-white' : 'text-slate-900'}`}>Test Minat Bakat</h3>
               <p className={`text-xs leading-relaxed ${isDark ? 'text-white/70' : 'text-slate-600'}`}>
-                Assessment psikometrik komprehensif untuk membantu siswa mengeksplorasi potensi terpendam, menemukan minat kuat, dan mengarahkan karir di masa depan.
+                Bahan refleksi untuk mengeksplorasi minat siswa dan mendukung diskusi pendampingan. Hasil tidak menggantikan asesmen profesional atau menentukan pilihan karier.
               </p>
             </div>
 
@@ -256,7 +256,7 @@ export default function Home() {
               <div>
                 <span className="text-primary font-bold tracking-wider uppercase text-xs">Keunggulan Utama</span>
                 <h2 className={`text-2xl md:text-3xl font-bold mt-2 ${isDark ? 'text-white' : 'text-slate-900'}`}>Mengapa Memilih Platform Kami?</h2>
-                <p className={`mt-3 text-sm ${isDark ? 'text-white/70' : 'text-slate-600'}`}>Platform CBT kami dirancang khusus dengan teknologi terkini yang memberikan performa dan keandalan tinggi, memastikan ujian berjalan lancar tanpa kendala apapun.</p>
+                <p className={`mt-3 text-sm ${isDark ? 'text-white/70' : 'text-slate-600'}`}>Satu alur kerja untuk pengelola sekolah dan guru: menyiapkan ujian, memantau pelaksanaan, lalu membaca hasil sebagai dasar evaluasi pembelajaran.</p>
               </div>
 
               <div className="grid sm:grid-cols-2 gap-x-6 gap-y-8">
@@ -291,18 +291,55 @@ export default function Home() {
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1"><Server className="w-5 h-5 text-primary" /></div>
                   <div>
-                    <h4 className={`font-semibold text-sm ${isDark ? 'text-white' : 'text-slate-900'}`}>Skalabilitas Tinggi</h4>
-                    <p className={`text-sm mt-1 ${isDark ? 'text-white/70' : 'text-slate-600'}`}>Server cloud khusus yang tangguh, mampu menangani pengerjaan serentak puluhan ribu siswa.</p>
+                    <h4 className={`font-semibold text-sm ${isDark ? 'text-white' : 'text-slate-900'}`}>Perencanaan Pelaksanaan</h4>
+                    <p className={`text-sm mt-1 ${isDark ? 'text-white/70' : 'text-slate-600'}`}>Diskusikan jumlah peserta, jadwal sesi, dan kesiapan koneksi dengan tim sebelum pelaksanaan ujian.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1"><ShieldCheck className="w-5 h-5 text-primary" /></div>
                   <div>
-                    <h4 className={`font-semibold text-sm ${isDark ? 'text-white' : 'text-slate-900'}`}>Aman dan Stabil</h4>
-                    <p className={`text-sm mt-1 ${isDark ? 'text-white/70' : 'text-slate-600'}`}>Proteksi anti-kecurangan tingkat lanjut dan sistem auto-save yang mencegah hilangnya jawaban siswa saat koneksi terputus.</p>
+                    <h4 className={`font-semibold text-sm ${isDark ? 'text-white' : 'text-slate-900'}`}>Kesiapan Sekolah</h4>
+                    <p className={`text-sm mt-1 ${isDark ? 'text-white/70' : 'text-slate-600'}`}>Gunakan demo untuk meninjau alur akses, pengelolaan peserta, dan kebutuhan operasional bersama tim sekolah.</p>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="roadmap-ai" className={`py-20 border-y ${isDark ? 'bg-slate-950/90 border-white/10' : 'bg-slate-50 border-slate-200'}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl space-y-4 mb-10">
+            <span className="text-primary font-bold uppercase text-xs">Roadmap</span>
+            <h2 className={`text-2xl md:text-3xl font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>AI untuk asesmen yang lebih bermakna</h2>
+            <p className={`text-sm md:text-base leading-relaxed ${isDark ? 'text-white/70' : 'text-slate-600'}`}>
+              FAZCBT mengembangkan teknologi AI untuk menghubungkan tujuan pembelajaran, soal, dan hasil asesmen. Sebagian fitur dalam roadmap ini telah terimplementasi, sementara fitur lainnya dikembangkan secara bertahap. Fokusnya adalah membantu guru menyiapkan materi, memahami pola jawaban, dan menentukan tindak lanjut belajar yang sesuai dengan kebutuhan siswa.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { icon: BookOpen, title: 'Penyusunan soal berbantuan AI', text: 'Guru menentukan tujuan belajar, topik, jenjang, dan tingkat kesulitan. AI dirancang untuk mengusulkan draf soal, kunci jawaban, serta pembahasan yang dapat diperiksa dan disunting guru sebelum diterbitkan.' },
+              { icon: LineChart, title: 'Analisis hasil per kompetensi', text: 'Jawaban dan hasil asesmen yang dipetakan ke kompetensi menjadi dasar AI menyusun ringkasan penguasaan materi dan pola kesalahan. Guru dapat menelusuri data pendukung sebelum menetapkan area yang perlu diperkuat.' },
+              { icon: BrainCircuit, title: 'Tindak lanjut belajar yang terarah', text: 'Berdasarkan hasil yang telah ditinjau, AI dirancang untuk menyarankan latihan remedial, pengayaan, dan penjelasan bertahap. Guru memilih serta menyesuaikan materi untuk kebutuhan siswa atau kelompok belajar.' },
+            ].map(({ icon: Icon, title, text }) => (
+              <div key={title} className={`border-t pt-6 ${isDark ? 'border-white/15' : 'border-slate-300'}`}>
+                <Icon className="w-6 h-6 text-primary mb-4" />
+                <h3 className="text-base font-semibold mb-3">{title}</h3>
+                <p className={`text-sm leading-relaxed ${isDark ? 'text-white/70' : 'text-slate-600'}`}>{text}</p>
+              </div>
+            ))}
+          </div>
+          <div className={`grid md:grid-cols-2 gap-10 mt-12 pt-8 border-t ${isDark ? 'border-white/10' : 'border-slate-200'}`}>
+            <div className="space-y-3">
+              <h3 className="text-lg font-semibold">Guru tetap memegang kendali</h3>
+              <p className={`text-sm leading-relaxed ${isDark ? 'text-white/70' : 'text-slate-600'}`}>AI berperan sebagai asisten, bukan penentu nilai akhir atau pengganti pendidik. Alur yang direncanakan menempatkan peninjauan guru sebelum soal diterbitkan, ringkasan hasil digunakan, atau rekomendasi latihan diberikan kepada siswa.</p>
+              <p className={`text-sm leading-relaxed ${isDark ? 'text-white/70' : 'text-slate-600'}`}>Evaluasi fitur akan berfokus pada kesesuaian soal dengan tujuan belajar, ketepatan kunci dan pembahasan, serta kesetiaan ringkasan terhadap data asesmen. Keluaran yang keliru atau tidak cukup didukung data perlu diperbaiki sebelum digunakan.</p>
+            </div>
+            <div className="space-y-3">
+              <h3 className="text-lg font-semibold">Data yang relevan, penggunaan yang bertanggung jawab</h3>
+              <p className={`text-sm leading-relaxed ${isDark ? 'text-white/70' : 'text-slate-600'}`}>Masukan AI direncanakan terbatas pada materi ajar, rubrik, dan data asesmen yang diperlukan. Rancangan perlindungan mencakup penghilangan identitas langsung siswa, pembatasan akses, serta peninjauan kebijakan pemrosesan data sebelum uji coba dengan data siswa.</p>
+              <p className={`text-sm leading-relaxed ${isDark ? 'text-white/70' : 'text-slate-600'}`}>Roadmap mencakup fitur yang telah terimplementasi dan pengembangan berikutnya. Prioritas selanjutnya adalah penyempurnaan kualitas rekomendasi, evaluasi bersama pendidik, dan perluasan manfaat bagi pekerjaan guru.</p>
             </div>
           </div>
         </div>
@@ -314,8 +351,8 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 rounded-full bg-cyan-600/20 blur-3xl mix-blend-screen pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <h2 className={`text-2xl md:text-3xl font-bold mb-3 ${isDark ? 'text-white' : 'text-slate-900'}`}>Siapa yang Dapat Menggunakan Solusi Kami?</h2>
-          <p className={`max-w-2xl mx-auto mb-10 text-sm ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>Dibangun secara inklusif dan fleksibel untuk memenuhi segala jenjang kebutuhan pendidikan dan variasi pengguna di seluruh Indonesia.</p>
+          <h2 className={`text-2xl md:text-3xl font-bold mb-3 ${isDark ? 'text-white' : 'text-slate-900'}`}>Berangkat dari kebutuhan sekolah Indonesia</h2>
+          <p className={`max-w-2xl mx-auto mb-10 text-sm ${isDark ? 'text-slate-400' : 'text-slate-600'}`}>Pasar yang dituju adalah sekolah, madrasah, dan lembaga bimbingan belajar. Pendekatan awal yang direncanakan: demo bersama pengelola, pilot dengan guru, lalu evaluasi penggunaan sebelum perluasan ke lebih banyak kelas.</p>
 
           <div className="flex flex-wrap justify-center gap-4">
             <div className={`w-full sm:w-auto px-5 py-3.5 rounded-xl backdrop-blur-md border transition-all flex items-center gap-2.5 ${isDark ? 'bg-white/10 border-white/10 hover:bg-white/20' : 'bg-slate-50 border-slate-200 hover:bg-slate-100'}`}>
@@ -342,20 +379,30 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={`py-16 border-t ${isDark ? 'bg-slate-950/90 border-white/10' : 'bg-slate-50 border-slate-200'}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+          <h2 className="text-2xl md:text-3xl font-bold">Model bisnis yang dituju: SaaS untuk institusi pendidikan</h2>
+          <div className={`space-y-4 text-sm leading-relaxed ${isDark ? 'text-white/70' : 'text-slate-600'}`}>
+            <p>Kami merencanakan langganan institusi untuk pengelolaan asesmen, dengan opsi fitur AI berbasis kuota penggunaan. Sekolah menjadi pelanggan, guru mengelola asesmen, dan siswa mengikuti kegiatan belajar.</p>
+            <p>Harga dan paket akan divalidasi melalui diskusi kebutuhan dan pilot. Fokus validasi bisnis adalah penggunaan berulang, kesediaan institusi berlangganan, dan biaya layanan yang berkelanjutan setelah kredit API berakhir.</p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="min-h-screen flex items-center py-16 bg-gradient-to-br from-primary to-secondary relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Siap meningkatkan kesiapan siswa menghadapi ujian?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Mari mulai dari kebutuhan guru di sekolah Anda</h2>
           <p className="text-white/90 text-sm md:text-base mb-8 max-w-2xl mx-auto">
-            Bergabunglah dengan puluhan institusi pendidikan lain yang telah membuktikan keunggulan simulasi evaluasi digital kami.
+            Tinjau platform CBT melalui demo, diskusikan tantangan asesmen, atau bicarakan peluang menjadi mitra pilot untuk rencana pengembangan AI.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a href="https://wa.me/62881080574850?text=Halo%20FAZCBT%2C%20saya%20ingin%20request%20demo%20gratis" target="_blank" rel="noopener noreferrer" className="px-6 py-3 text-sm bg-white text-primary font-bold rounded-full hover:bg-slate-50 transition-colors shadow-2xl">
-              Request Demo Gratis
+              Jadwalkan Demo CBT
             </a>
-            <a href="https://wa.me/62881080574850?text=Halo%20FAZCBT%2C%20saya%20ingin%20info%20lebih%20lanjut" target="_blank" rel="noopener noreferrer" className="px-6 py-3 text-sm bg-transparent text-white font-bold rounded-full border-2 border-white/40 hover:border-white hover:bg-white/10 transition-colors">
-              Hubungi Tim Sales Kami
+            <a href="https://wa.me/62881080574850?text=Halo%20FAZCBT%2C%20saya%20ingin%20berdiskusi%20tentang%20rencana%20pilot%20AI" target="_blank" rel="noopener noreferrer" className="px-6 py-3 text-sm bg-transparent text-white font-bold rounded-full border-2 border-white/40 hover:border-white hover:bg-white/10 transition-colors">
+              Diskusikan Pilot AI
             </a>
           </div>
         </div>
@@ -373,7 +420,7 @@ export default function Home() {
                 <img src={isDark ? '/assets/logo-header.png' : '/assets/logo-header-light.png'} alt="FAZCBT Logo" className="h-8 w-auto" />
               </div>
               <p className={`text-sm leading-relaxed ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
-                FAZCBT adalah platform simulasi ujian & assessment digital yang dikembangkan oleh <span className={`font-medium ${isDark ? 'text-white' : 'text-slate-900'}`}>FAZ Cyberautics Solutions</span>, tepercaya dan berdedikasi tinggi demi memajukan kualitas pendidikan di Indonesia.
+                FAZCBT adalah platform asesmen digital dari <span className={`font-medium ${isDark ? 'text-white' : 'text-slate-900'}`}>FAZ Cyberautics Solutions</span>. Menghubungkan simulasi ujian dengan kebutuhan belajar, dengan rencana AI yang menempatkan guru sebagai pengambil keputusan.
               </p>
             </div>
 
@@ -383,6 +430,7 @@ export default function Home() {
                 <li><Link href="#tentang" className="hover:text-accent transition-colors text-sm">Tentang Kami</Link></li>
                 <li><Link href="#layanan" className="hover:text-accent transition-colors text-sm">Layanan Asesmen</Link></li>
                 <li><Link href="#keunggulan" className="hover:text-accent transition-colors text-sm">Keunggulan Platform</Link></li>
+                <li><Link href="#roadmap-ai" className="hover:text-accent transition-colors text-sm">Roadmap</Link></li>
                 <li><Link href="#faq" className="hover:text-accent transition-colors text-sm">FAQ</Link></li>
               </ul>
             </div>

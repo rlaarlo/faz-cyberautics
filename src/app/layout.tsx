@@ -9,8 +9,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "FAZCBT | Platform Simulasi Ujian Digital",
-  description: "Platform Simulasi Ujian & Assessment Digital untuk Sekolah oleh FAZ Cyberautics Solutions",
+  title: "FAZCBT | Asesmen Digital untuk Sekolah Indonesia",
+  description: "Platform CBT dari FAZ Cyberautics Solutions untuk sekolah dan madrasah, dengan rencana asisten AI berbasis Claude untuk draf soal, evaluasi hasil, dan remedial yang ditinjau guru.",
   icons: {
     icon: "/assets/favicon.png",
   },

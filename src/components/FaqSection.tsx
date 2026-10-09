@@ -7,7 +7,7 @@ import { useTheme } from "./ThemeProvider";
 const faqData = [
     {
         q: "Apa itu FAZCBT?",
-        a: "FAZCBT adalah platform simulasi ujian berbasis komputer yang dirancang untuk membantu sekolah dan siswa mempersiapkan berbagai jenis asesmen seperti Simulasi ANBK, AKMI, UTBK, PISA, AKM Kelas, serta berbagai assessment test secara digital dan terstruktur.",
+        a: "FAZCBT adalah platform asesmen digital dari FAZ Cyberautics Solutions untuk sekolah, madrasah, dan lembaga bimbingan belajar di Indonesia. Produk berfokus pada simulasi CBT, dengan rencana pengembangan asisten AI untuk membantu pekerjaan guru sebelum dan setelah ujian.",
     },
     {
         q: "Siapa saja yang dapat menggunakan FAZCBT?",
@@ -15,7 +15,7 @@ const faqData = [
     },
     {
         q: "Apakah simulasi di FAZCBT menyerupai ujian sebenarnya?",
-        a: "Ya. Sistem simulasi dirancang menyerupai tampilan dan mekanisme ujian resmi, sehingga siswa dapat berlatih dengan pengalaman yang realistis sebelum menghadapi ujian sebenarnya.",
+        a: "Simulasi membantu siswa berlatih alur ujian berbasis komputer. FAZCBT adalah layanan latihan independen, bukan penyelenggara ujian resmi dan tidak menjamin kesamaan soal atau hasil pada ujian sebenarnya.",
     },
     {
         q: "Apakah siswa dapat langsung melihat hasil ujian?",
@@ -26,32 +26,32 @@ const faqData = [
         a: "Ya. FAZCBT adalah platform berbasis web yang dapat diakses melalui Komputer / Laptop, Tablet, dan Smartphone. Selama perangkat terhubung ke internet, sistem dapat digunakan dengan mudah.",
     },
     {
-        q: "Apa saja layanan simulasi yang tersedia di FAZCBT?",
-        a: "Platform menyediakan berbagai jenis simulasi dan assessment: Simulasi ANBK, Simulasi AKMI, Simulasi UTBK, Simulasi PISA, Simulasi AKM Kelas, Assessment Test, Tes Gaya Belajar, dan Tes Minat & Bakat.",
+        q: "Bagaimana status implementasi fitur dalam roadmap FAZCBT?",
+        a: "Sebagian fitur dalam roadmap FAZCBT telah terimplementasi, sementara fitur lainnya masih dikembangkan secara bertahap. Roadmap mencakup penyusunan soal berbantuan AI, analisis hasil per kompetensi, dan tindak lanjut belajar. Hubungi tim untuk mengetahui fitur yang sudah dapat digunakan dan melihat alurnya melalui demo.",
     },
     {
         q: "Apakah sekolah dapat mengelola ujian sendiri?",
         a: "Ya. Sekolah akan mendapatkan dashboard admin yang memungkinkan untuk mengelola siswa, mengatur jadwal ujian, membuat soal, serta melihat hasil dan laporan.",
     },
     {
-        q: "Apakah sistem dapat digunakan untuk banyak siswa sekaligus?",
-        a: "Ya. Sistem FAZCBT dirancang untuk menangani ujian secara massal, sehingga dapat digunakan oleh banyak siswa secara bersamaan dengan performa yang stabil.",
+        q: "Apakah AI akan menentukan nilai atau menggantikan guru?",
+        a: "Tidak dalam rencana penggunaan kami. Keluaran AI akan berupa draf atau saran yang wajib ditinjau guru sebelum digunakan. Ketepatan materi, kesesuaian rubrik, dan keputusan pembelajaran tetap menjadi tanggung jawab pendidik, bukan model AI.",
     },
     {
-        q: "Apakah data ujian aman?",
-        a: "Keamanan data adalah prioritas utama. Sistem dilengkapi dengan proteksi akses, manajemen pengguna, dan penyimpanan data yang aman untuk menjaga kerahasiaan hasil ujian.",
+        q: "Bagaimana rencana perlindungan data pada fitur AI?",
+        a: "Prototipe awal direncanakan menggunakan materi uji tanpa data pribadi siswa. Sebelum pilot dengan data siswa, kami perlu meninjau dasar pemrosesan, kebijakan privasi, pembatasan akses, serta penghilangan identitas langsung dari masukan API. Ini adalah rencana pengamanan, bukan klaim bahwa integrasinya sudah diterapkan.",
     },
     {
         q: "Bagaimana cara sekolah mulai menggunakan FAZCBT?",
         a: "Sekolah dapat memulai dengan mudah melalui langkah berikut: Menghubungi tim FAZCBT, mendapatkan demo platform, registrasi sekolah, lalu mulai membuat simulasi ujian untuk siswa.",
     },
     {
-        q: "Apakah tersedia demo sistem?",
-        a: "Ya. Kami menyediakan demo platform agar sekolah dapat melihat langsung bagaimana sistem bekerja sebelum menggunakannya secara penuh.",
+        q: "Bagaimana model langganan dan rencana pilot AI?",
+        a: "Model yang dituju adalah langganan institusi untuk asesmen, dengan opsi AI berbasis kuota. Harga, ruang lingkup, dan jadwal pilot belum ditetapkan di halaman ini. Hubungi tim untuk demo CBT atau diskusi pilot; rencana evaluasi mencakup waktu kerja guru, kualitas keluaran, dan biaya penggunaan API.",
     },
     {
         q: "Bagaimana cara menghubungi tim FAZCBT?",
-        a: "Anda dapat menghubungi tim kami melalui Email, WhatsApp, atau Form kontak pada website. Tim kami siap membantu sekolah dalam implementasi platform simulasi ujian.",
+        a: "Hubungi info@fazcbt.id atau WhatsApp +62 881-0805-74850 untuk demo CBT, kebutuhan sekolah, atau diskusi rencana pilot AI. Sertakan nama institusi dan kebutuhan asesmen, tanpa mengirim data pribadi siswa.",
     },
 ];
 
